@@ -40,6 +40,8 @@ public class Slingshot : MonoBehaviour {
 		projectile.transform.position = launchPos;
 		//Set it to isKinematic for now
 		projectile.GetComponent<Rigidbody> ().isKinematic = true;
+		//Count the shots
+		MissionDemolition.ShotFired ();
 	}
 
 	// Use this for initialization
